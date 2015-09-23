@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EzCap"
+        android:typeface="serif"
+        android:textSize="100sp"
+
+        android:layout_gravity="center_horizontal|top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+            <ImageButton
+                android:id="@+id/vi_vedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/video"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vi_vedio"
+                android:layout_centerHorizontal="true"
+                android:text="Take Vedio"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+
+
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/camera"
+                android:onClick="CameraClick"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera"
+                android:layout_centerHorizontal="true"
+                android:text="Take Picture"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+
+            <ToggleButton
+                android:id="@+id/toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textOn="Start"
+                android:textOff="Stop"
+                android:background="@mipmap/record"
+
+                android:layout_gravity="center_horizontal" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toggle"
+                android:layout_centerHorizontal="true"
+                android:text="Screen Recorder"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+
+            <ImageButton
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/help"
+                android:layout_gravity="center_horizontal"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help"
+                android:layout_centerHorizontal="true"
+                android:text="Help"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
